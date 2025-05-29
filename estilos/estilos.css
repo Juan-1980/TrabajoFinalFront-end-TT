@@ -1,0 +1,192 @@
+html{
+      /*background-color:#D0D0D0;*/
+      font-family: "Roboto" sans-serif;
+      scroll-behavior: smooth;
+}
+
+body{
+   /* scroll-behavior: smooth;*/
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto" sans-serif;
+    background-color: #DDCFC8;
+    padding-top: 200px;
+}
+
+#Inicio, #productos, #contacto{
+    position: relative;
+    top: -15rem;
+}
+/*#logoYnav{
+    display: flex;
+    margin-bottom: 2rem;
+}*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    background-color: #B8B4DC;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+/*header nav{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}*/
+
+/*header*/ img {
+    width: 15rem;
+}
+
+header ul{
+   
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    /*justify-content: end;
+    flex-wrap: wrap;*/
+ }
+
+header li{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.formContacto{  
+    background-color: #ADD6E8;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    height: 13rem;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: start;
+}
+.contenedortexarea{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#productos{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.producto{
+ font-family: "Roboto";   
+ background-color: #F5F5F5;
+ width: 12rem;
+ border: 2px solid gray;
+
+}
+
+.producto img{
+    width: 100%;
+    background-color: white;
+}
+
+/*Reseña*/
+.resenias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    /*grid-template-rows: 1fr 1fr;*/
+    gap:1rem;
+    place-items: center;
+
+}
+
+.card{
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    color: #6f8191;
+    width: 15rem;   
+}
+.card-nombre{
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.card .fa-solid{
+    color: rgb(255,217,0);
+}
+.card-fecha{
+    font-size: 0.6rem;
+}
+
+.card-content p{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+iframe{
+
+    width: 100%;
+}
+
+video{
+    /*border: 2px solid red;*/
+    padding: 10px;
+}
+
+main{
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+}
+
+/*#ContenedorProductos{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}*/
+
+footer{
+    background-color:#B8B4DC ;
+}
+footer nav{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+footer ul{
+   
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    flex-wrap: wrap;
+    
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+

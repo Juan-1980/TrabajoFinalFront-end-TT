@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer Proyecto</title>
+    <!--Fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Iconos de Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Mis estilos-->
+    <link rel="stylesheet" href="/estilos/estilos.css" />
+  </head>
+  <body>
+    <!--
+    <header>
+        <h1>Venta de insumos para Jardineria</h1>
+        <img src="imagenes/logo.jpg" alt="">
+    </header>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    -->
+    <header>
+      <img class="logo" src="/imagenes/logo.jpg" alt="" />
+      <nav id="headerNav">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i> <a href="#Inicio">Inicio</a>
+          </li>
+          <!--<li><a href="#">Nosotros</a></li-->
+          <li>
+            <i class="fa-brands fa-product-hunt"></i>
+            <a href="#productos">Productos</a>
+          </li>
+          <!--<li><a href="#">Servicios</a></li-->
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <a id="Inicio"></a>
+      <section>
+        <iframe
+          width="895"
+          height="503"
+          src="https://www.youtube.com/embed/sCDJ_EB5iWA"
+          title="TOP 9 MEJORES Gadgets Para El JARDÍN [2024]🌼"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          loop="0"
+        >
+        </iframe>
+      </section>
+
+      <a id="contacto"></a>
+      <h2>Contacto</h2>
+      <form
+        class="formContacto"
+        action="https://formspree.io/f/mvgklqzr"
+        method="POST"
+      >
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <!--<label >Nombre: <input type="email" name="email"></label> -->
+        <div>
+          <label for="email">Correo electronico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="contenedortexarea">
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+        </div>
+        <!-- <input type="submit" value="Envianr">-->
+        <button type="submit">Enviar</button>
+      </form>
+       <!--Productos-->
+      <a id="productos"></a> 
+       <section>
+        <h2>Productos</h2> 
+        <div class="productos"> 
+             <div class="producto">
+                <img src="/imagenes/Fertilizante.jpg" alt="fertilizante" />
+                <div class="productoContenido">
+                <h4>Fertilizante</h4>
+                <samp>$12.000</samp>
+                </div>
+             </div>
+                 <div class="producto">
+                    <img src="/imagenes/Guantes.jpg" alt="guantes" />
+                    <div class="productoContenido">
+                    <h4>Guantes</h4>
+                    <samp>$5.000</samp>
+                    </div>
+                </div>
+             <div class="producto">
+                    <img src="/imagenes/PortaMasetas.jpg" alt="portamasetas" />
+                    <div class="productoContenido">
+                    <h4>Portamasetas</h4>
+                    <samp>$10.000</samp>
+                    </div>
+             </div>
+              <div class="producto">
+                    <img src="/imagenes/Tierra.jpg" alt="tierra" />
+                    <div class="productoContenido">
+                    <h4>Tierra</h4>
+                    <samp>$10.000</samp>
+                    </div>
+             </div>
+        </div>
+        </section>
+       
+        <h2>Visitenos</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.352501812105!2d-58.49084272367254!3d-34.56994617296657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65fa43f574d%3A0xfeac1f2c079b23b1!2sTom%C3%A1s%20A.%20Le%20Bret%C3%B3n%204986%2C%20C1431%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1747507888796!5m2!1sen!2sar"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+        <section>
+          <div class="resenias">
+              <div class="card">
+                 <img src="/imagenes/foto1.avif" alt="">
+                 <div class="card-content">
+                    <div>
+                      <span class="card-nombre">Jose Moreira</span><br>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                      <span class="card-fecha">17/05/2025</span> 
+                    </div>
+                    <p>Muy buen producto</p>
+                 </div>
+              </div>
+              <div class="card">
+                 <img src="/imagenes/foto2.avif" alt="">
+                 <div class="card-content">
+                    <div>
+                      <span class="card-nombre">Miguel Gutierres</span><br>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                      <span class="card-fecha">10/05/2025</span> 
+                    </div>
+                    <p>Muy buena atencion y productos exlentes</p>
+                 </div>
+              </div>
+              <div class="card">
+                 <img src="/imagenes/foto3.avif" alt="">
+                 <div class="card-content">
+                    <div>
+                      <span class="card-nombre">Andrea Pompa</span><br>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                      <span class="card-fecha">17/02/2025</span> 
+                    </div>
+                    <p>Exeleten calidad</p>
+                 </div>
+              </div>
+              <div class="card">
+                 <img src="/imagenes/foto4.avif" alt="">
+                 <div class="card-content">
+                    <div>
+                      <span class="card-nombre">Pamela Dominguez</span><br>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                      <span class="card-fecha">11/05/2025</span> 
+                    </div>
+                    <p>Exelente atencion y productos</p>
+                 </div>
+              </div>
+               <div class="card">
+                 <img src="/imagenes/foto5.avif" alt="">
+                 <div class="card-content">
+                    <div>
+                      <span class="card-nombre">Pamela Dominguez</span><br>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                      <span class="card-fecha">11/05/2025</span> 
+                    </div>
+                    <p>Exelente atencion y productos</p>
+                 </div>
+              </div>
+               <div class="card">
+                 <img src="/imagenes/foto6.avif" alt="">
+                 <div class="card-content">
+                    <div>
+                      <span class="card-nombre">Pamela Dominguez</span><br>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                      <span class="card-fecha">11/05/2025</span> 
+                    </div>
+                    <p>Exelente atencion y productos</p>
+                 </div>
+              </div>
+          </div>
+      </section>     
+
+    </main>
+
+     <footer>
+     <div>
+      <nav id="footerNav">
+        <ul class="nav-list">
+          <ul>
+            <li><i class="fa-solid fa-house"></i> <a href="#Inicio">Inicio</a></li>
+            <!--<li><a href="#">Nosotros</a></li-->
+            <li><i class="fa-brands fa-product-hunt"></i> <a href="#productos">Productos</a></li>
+            <!--<li><a href="#">Servicios</a></li-->
+            <li><i class="fa-solid fa-envelope"></i> <a href="#contacto">Contacto</a></li>
+        </ul>
+       </nav>
+      </div>   
+      <div class="redes">
+        <h3>Seguinos en nuestras redes</h3>
+        <ul>
+        <a href="https://www.instagram.com/" target="_blank">
+        <li><i class="fa-brands fa-square-instagram"></i> Instagram</li>
+        </a>
+        <a href="https://www.tiktok.com/es/" target="_blank">
+        <li><i class="fa-brands fa-tiktok"></i> Tik Tok</li>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+        <li><i class="fa-brands fa-square-facebook"></i> Facebook</li>
+        </a>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
