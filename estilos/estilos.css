@@ -91,11 +91,18 @@ header a{
 }
 
 #productos{
-    display: flex;
-    align-items:center;
+   /* display: flex;
+   align-items:center;
     justify-content:space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap:1rem;
+    padding: 1rem;
+    box-shadow: inset;
+    place-items: center;
+    width: 12rem;
     
 }
 
@@ -104,7 +111,7 @@ header a{
  background-color: #F5F5F5;
  width: 12rem;
  border: 2px solid gray;
-
+ 
 }
 
 .producto img{
